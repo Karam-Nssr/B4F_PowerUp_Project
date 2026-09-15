@@ -22,21 +22,3 @@ document
       }
     }
   });
-export const postData=async (url,data)=>{
-    try {
-        const resp=await fetch(url, {
-        method: "POST",
-        headers: {
-         "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-});
-if(!resp.ok){
-    throw new Error(resp.status);
-}
-const result =await resp.json();
-console.log(result)
-    } catch (error) {
-        console.log(error);
-    }
-}
