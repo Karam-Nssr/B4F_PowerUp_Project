@@ -1,4 +1,44 @@
 {
-    "users":[{"name":"Ammar"}],
-    "todos":[]
+  "users": [
+    {
+      "fname": "Ammar",
+      "lname": "Farha",
+      "gender": "MALE",
+      "age": 25,
+      "job_title": "IT",
+      "id": "LfZ5dliCGhI"
+    },
+    {
+      "fname": "Karam",
+      "lname": "Nssr",
+      "gender": "MALE",
+      "age": 21,
+      "job_title": "IT",
+      "id": "IK_nyTBJB60"
+    },
+    {
+      "fname": "Adnan",
+      "lname": "Al-Sous",
+      "gender": "MALE",
+      "age": 23,
+      "job_title": "IT",
+      "id": "4c3-cu2A69o"
+    }
+  ],
+  "todos": [
+    {
+      "employee_id": {
+        "fname": "Ammar",
+        "lname": "Farha",
+        "gender": "MALE",
+        "age": 25,
+        "job_title": "IT",
+        "id": "LfZ5dliCGhI"
+      },
+      "status": "pending",
+      "task": "Create a Website",
+      "id": "g8NN2kdw3cs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
