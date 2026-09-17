@@ -1,0 +1,11 @@
+.front{
+    background-color: red;
+    border: 5px solid white;
+    justify-content: center;
+   
+    
+}
+
+.container{
+    margin-bottom: 5px !important;
+}
