@@ -1,10 +1,16 @@
+import { patchData } from "../core/http_methods.js";
+import { base_url, todos } from "../core/endpoints.js";
 const add_btn = document.getElementById("add_btn");
 const taskList = [];
 document
   .getElementById("taskTableBody")
-  .addEventListener("change", function (e) {
+  .addEventListener("change", async function (e) {
     if (e.target.classList.contains("status-dropdown")) {
       const select = e.target;
+
+      const taskId = select.dataset.taskId;
+      const newStatus = select.value;
+
       select.classList.remove(
         "bg-warning",
         "bg-info",
@@ -13,13 +19,17 @@ document
         "text-white",
       );
 
-      if (select.value === "pending") {
+      if (newStatus === "pending") {
         select.classList.add("bg-warning", "text-dark");
-      } else if (select.value === "in-progress") {
+      } else if (newStatus === "in-progress") {
         select.classList.add("bg-info", "text-white");
-      } else if (select.value === "completed") {
+      } else if (newStatus === "completed") {
         select.classList.add("bg-success", "text-white");
       }
+
+      await patchData(`${base_url}${todos}/${taskId}`, {
+        status: newStatus,
+      });
     }
   });
 export function renderTasks(tasks, users) {
