@@ -27,14 +27,7 @@
   ],
   "todos": [
     {
-      "employee_id": {
-        "fname": "Ammar",
-        "lname": "Farha",
-        "gender": "MALE",
-        "age": 25,
-        "job_title": "IT",
-        "id": "LfZ5dliCGhI"
-      },
+      "employee_id":"LfZ5dliCGhI",
       "status": "pending",
       "task": "Create a Website",
       "id": "g8NN2kdw3cs"
