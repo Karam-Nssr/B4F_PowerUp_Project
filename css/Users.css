@@ -1,11 +1,17 @@
-.front{
-    background-color: red;
-    border: 5px solid white;
-    justify-content: center;
-   
-    
+.card{
+    width: 100%;
+     max-width: 700px;
+      background-color: rgba(61, 61, 61, 0.338);
+}
+
+.mb-3{
+    color: white;
+}
+
+.text-muted{
+    color: white !important;
 }
 
 .container{
-    margin-bottom: 5px !important;
+    height: 80vh !important;
 }
