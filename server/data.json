@@ -23,14 +23,34 @@
       "age": 23,
       "job_title": "IT",
       "id": "4c3-cu2A69o"
+    },
+    {
+      "fname": "k",
+      "lname": "test",
+      "gender": "MALE",
+      "age": 22,
+      "job_title": "testtttt",
+      "id": "4MYIGC1"
     }
   ],
   "todos": [
     {
-      "employee_id": "LfZ5dliCGhI",
+      "employee_id": "4c3-cu2A69o",
       "status": "completed",
       "task": "Create a Website",
       "id": "g8NN2kdw3cs"
+    },
+    {
+      "employee_id": "IK_nyTBJB60",
+      "status": "pending",
+      "task": "testtttttttt",
+      "id": "H2he0IN"
+    },
+    {
+      "employee_id": "LfZ5dliCGhI",
+      "status": "in-progress",
+      "task": "testtttttttt",
+      "id": "d0dEcOd"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
